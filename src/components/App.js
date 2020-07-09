@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import {Route, Switch } from 'react-router-dom';
 // import PlanetDetailsPage from '../pages/PlanetDetailsPage';
 // import StarshipDetailsPage from '../pages/StarshipDetailsPage';
 
@@ -37,7 +37,6 @@ const ErrorPage = lazy(() =>
 
 function App() {
   return (
-    <HashRouter basename='/'>
     <>
       <Suspense fallback={<h1>Loading...</h1>}>
         <Switch>
@@ -58,7 +57,6 @@ function App() {
         </Switch>
       </Suspense>
     </>
-    </HashRouter>
   );
 }
 
