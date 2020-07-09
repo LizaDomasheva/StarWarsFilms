@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "791f7e20e50cf8d5f5038bbe965faea8",
+    "revision": "b17ec1c47eab481ff8e090ebd35efd18",
     "url": "/StarWarsFilms/index.html"
   },
   {
-    "revision": "a1c93368761981f6eee2",
+    "revision": "cdf24139502b163d8fee",
     "url": "/StarWarsFilms/static/css/home-page.d9fed725.chunk.css"
   },
   {
-    "revision": "ba835608565fdac72c3d",
+    "revision": "03acecb7936d3bd35a53",
     "url": "/StarWarsFilms/static/css/main.269be7ff.chunk.css"
   },
   {
-    "revision": "7b5bb3eee276a3371aa6",
+    "revision": "1e1b576f1b88d0f1bdb3",
     "url": "/StarWarsFilms/static/css/movie.1b86af45.chunk.css"
   },
   {
@@ -24,12 +24,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/StarWarsFilms/static/js/0.7b619b42.chunk.js"
   },
   {
-    "revision": "69bfc3c101a38778fe1c",
-    "url": "/StarWarsFilms/static/js/10.1898c0f6.chunk.js"
+    "revision": "7d7f454656b75d005e71",
+    "url": "/StarWarsFilms/static/js/10.ba28872a.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/StarWarsFilms/static/js/10.1898c0f6.chunk.js.LICENSE.txt"
+    "url": "/StarWarsFilms/static/js/10.ba28872a.chunk.js.LICENSE.txt"
   },
   {
     "revision": "2be3fd222fd1b37f0573",
@@ -40,16 +40,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/StarWarsFilms/static/js/error-page.a0709413.chunk.js"
   },
   {
-    "revision": "a1c93368761981f6eee2",
-    "url": "/StarWarsFilms/static/js/home-page.b7e4a451.chunk.js"
+    "revision": "cdf24139502b163d8fee",
+    "url": "/StarWarsFilms/static/js/home-page.827043dc.chunk.js"
   },
   {
-    "revision": "ba835608565fdac72c3d",
-    "url": "/StarWarsFilms/static/js/main.2e3dea12.chunk.js"
+    "revision": "03acecb7936d3bd35a53",
+    "url": "/StarWarsFilms/static/js/main.db6de0f5.chunk.js"
   },
   {
-    "revision": "7b5bb3eee276a3371aa6",
-    "url": "/StarWarsFilms/static/js/movie.54d4d3e9.chunk.js"
+    "revision": "1e1b576f1b88d0f1bdb3",
+    "url": "/StarWarsFilms/static/js/movie.629dfe9a.chunk.js"
   },
   {
     "revision": "11daa8a2eeec7ff03af1",
@@ -64,7 +64,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/StarWarsFilms/static/js/planetDetails-page.dd1fadf5.chunk.js"
   },
   {
-    "revision": "1c9e59f0ff28e0b4df51",
-    "url": "/StarWarsFilms/static/js/runtime-main.477411db.js"
+    "revision": "642263a94b97bfb39e51",
+    "url": "/StarWarsFilms/static/js/runtime-main.f15106d8.js"
   }
 ]);
