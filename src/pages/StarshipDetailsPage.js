@@ -5,13 +5,12 @@ const getIdFromProps = props => props.match.params.id;
 
 const StarshipDetails = lazy(() =>
   import(
-    '../components/planetsAndStarships/StarshipDetails' /* webpackChunkName: 'movie' */
+    '../components/planetsAndStarships/StarshipDetails' /* webpackChunkName: 'starship' */
   ),
 );
 
 export default class StarshipDetailsPage extends Component {
   state = {
-    movie: null,
     massage: null,
     search: '',
     from: '',

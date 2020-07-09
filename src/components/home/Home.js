@@ -3,35 +3,31 @@ import { Link } from 'react-router-dom';
 import styles from './home.module.css';
 import PropTypes from 'prop-types';
 
-export const Home = ({ movies }) => (
+export const Home = ({ films }) => (
   <>
     <h2 className={styles.title}>Star Wars films</h2>
     <ul>
-      {movies.map(movie => {
-        const id = movie.url.slice(27, 28)
-return (
-        <li key={id}>
-          <Link 
-            to={{
-              pathname: `/films/${id}`,
-              state: { from: '/' },
-            }}
-          >
-            {movie.title}
-          </Link>
-        </li>
-)
-
-
-
-          })}
+      {films.map(film => {
+        const id = film.url.slice(27, 28);
+        return (
+          <li key={id}>
+            <Link
+              to={{
+                pathname: `/films/${id}`,
+                state: { from: '/' },
+              }}
+            >
+              {film.title}
+            </Link>
+          </li>
+        );
+      })}
     </ul>
   </>
 );
 
 Home.propTypes = {
-  title: PropTypes.string,
-  id: PropTypes.string,
+  films: PropTypes.array,
 };
 
 export default Home;

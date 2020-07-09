@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { fetchFilmsList } from '../services/fetcher';
 import { Home } from '../components/home/Home';
-import styles from '../components/search/SearchFilms.module.css';
+import styles from '../components/search/searchFilms.module.css';
 
-const searchFilms = (search, movies) => {
-  return movies.filter(movie =>
-    movie.title.toLowerCase().includes(search.toLowerCase()),
+const searchFilms = (search, films) => {
+  return films.filter(film =>
+    film.title.toLowerCase().includes(search.toLowerCase()),
   );
 };
 
 export default class HomePage extends Component {
   state = {
-    movies: [],
+    films: [],
     message: null,
     search: '',
   };
@@ -26,11 +26,11 @@ export default class HomePage extends Component {
 
   getFilmsList = async () => {
     try {
-      const movies = await fetchFilmsList();
-      const moviesListAndSort = movies.data.results.sort(
+      const films = await fetchFilmsList();
+      const filmsListAndSort = films.data.results.sort(
         this.sortByField('title'),
       );
-      this.setState({ movies: moviesListAndSort });
+      this.setState({ films: filmsListAndSort });
     } catch (message) {
       this.setState({ message });
     }
@@ -41,8 +41,8 @@ export default class HomePage extends Component {
   };
 
   render() {
-    const { movies, search } = this.state;
-    const searchedFilms = searchFilms(search, movies);
+    const { films, search } = this.state;
+    const searchedFilms = searchFilms(search, films);
     return (
       <>
         <form onSubmit={this.handleSubmit} className={styles.form}>
@@ -54,7 +54,7 @@ export default class HomePage extends Component {
             onChange={this.handleChange}
           />
         </form>
-        <Home movies={searchedFilms} />
+        <Home films={searchedFilms} />
       </>
     );
   }

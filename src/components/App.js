@@ -1,21 +1,13 @@
 import React, { lazy, Suspense } from 'react';
 import {Route, Switch } from 'react-router-dom';
-// import PlanetDetailsPage from '../pages/PlanetDetailsPage';
-// import StarshipDetailsPage from '../pages/StarshipDetailsPage';
-
-// import HomePage from '../pages/HomePage';
-// import MoviesPage from '../pages/moviesPage/MoviesPage';
-// import MovieDetailsPage from '../pages/MovieDetailsPage';
-// import ErrorPage from '../pages/ErrorPage';
-// import Nav from './nav/Nav';
 
 const HomePage = lazy(() =>
   import('../pages/HomePage' /* webpackChunkName: 'home-page' */),
 );
 
-const MovieDetailsPage = lazy(() =>
+const FilmDetailsPage = lazy(() =>
   import(
-    '../pages/MovieDetailsPage' /* webpackChunkName: 'movieDetails-page' */
+    '../pages/FilmDetailsPage' /* webpackChunkName: 'filmDetails-page' */
   ),
 );
 
@@ -43,7 +35,7 @@ function App() {
           <Route path="/" exact render={props => <HomePage {...props} />} />
           <Route
             path="/films/:id"
-            render={props => <MovieDetailsPage {...props} />}
+            render={props => <FilmDetailsPage {...props} />}
           />
           <Route
             path="/planets/:id"

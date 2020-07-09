@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import styles from './home.module.css';
 import PropTypes from 'prop-types';
 
 export const Planets = ({ planets }) => (
   <>
-    {/* <h2 className={styles.title}>Star Wars films</h2> */}
     <ul>
       <strong>Planets:</strong>
       {planets.map(planet => {
@@ -28,6 +26,5 @@ export const Planets = ({ planets }) => (
 );
 
 Planets.propTypes = {
-  title: PropTypes.string,
-  id: PropTypes.number,
+  planets: PropTypes.array,
 };

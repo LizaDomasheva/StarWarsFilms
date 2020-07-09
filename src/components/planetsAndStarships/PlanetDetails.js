@@ -13,8 +13,8 @@ import styles from './planetAndStarship.module.css';
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.movieBox}>
-          <div className={styles.movieDiv}>
+        <div className={styles.filmBox}>
+          <div className={styles.filmDiv}>
             <h2 className={styles.title}>{name}</h2>
             <p>
               <strong>Climate:</strong> {climateNew}
@@ -36,14 +36,11 @@ import styles from './planetAndStarship.module.css';
 };
 
 PlanetDetails.propTypes = {
-  title: PropTypes.string,
-  vote_average: PropTypes.number,
-  overview: PropTypes.string,
-  genres: PropTypes.array,
-  poster_path: PropTypes.string,
-  onGoBack: PropTypes.func,
-  id: PropTypes.number,
+  name: PropTypes.string,
+  climate: PropTypes.string,
+  diameter: PropTypes.string,
+  gravity: PropTypes.string,
+  population: PropTypes.string,
 };
-
 
 export default PlanetDetails;

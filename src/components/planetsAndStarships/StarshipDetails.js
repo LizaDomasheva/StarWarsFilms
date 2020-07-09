@@ -12,8 +12,8 @@ const StarshipDetails = ({
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.movieBox}>
-          <div className={styles.movieDiv}>
+        <div className={styles.filmBox}>
+          <div className={styles.filmDiv}>
             <h2 className={styles.title}>{name}</h2>
             <p>
               <strong>Class:</strong> {starship_class}
@@ -35,13 +35,10 @@ const StarshipDetails = ({
 };
 
 StarshipDetails.propTypes = {
-  title: PropTypes.string,
-  vote_average: PropTypes.number,
-  overview: PropTypes.string,
-  genres: PropTypes.array,
-  poster_path: PropTypes.string,
-  onGoBack: PropTypes.func,
-  id: PropTypes.number,
+  name: PropTypes.string,
+  starship_class: PropTypes.string,
+  cargo_capacity: PropTypes.string,
+  consumables: PropTypes.string,
 };
 
 export default StarshipDetails;
