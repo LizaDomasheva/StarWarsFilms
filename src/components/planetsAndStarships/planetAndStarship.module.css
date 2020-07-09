@@ -1,0 +1,29 @@
+.container {
+    padding: 20px;
+    border-bottom: 2px solid rgba(102, 102, 102, 0.71)
+}
+
+.movieBox {
+    display: flex;
+    margin: 10px 0;
+
+}
+
+.movieDiv {
+    margin: 10px 15px;
+}
+
+.infoBlock {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 250px;
+    height: auto
+}

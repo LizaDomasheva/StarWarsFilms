@@ -1,0 +1,37 @@
+/* @import './normalize.css'; */
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: serif;
+    font-size: 17px;
+    line-height: 22px;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    /* margin: 0;
+    padding: 0; */
+  }
+  
+  /* ul,
+  ol,
+  li {
+    list-style: none;
+  } */
+  
+  /* a {
+    text-decoration: none;
+  } */
+  
+  ​img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
